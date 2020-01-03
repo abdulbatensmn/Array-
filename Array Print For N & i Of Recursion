@@ -1,0 +1,25 @@
+#include<stdio.h>
+int main(){
+    int n=10, i=1;
+    array(n, i);
+    printf("\n\n");
+    array2(n, i);
+    return 0;
+
+}
+void array(int n, int i){
+    if(i>n)
+        return;
+    printf("%d ", i);
+
+    array(n ,i+1);
+}
+void array2(int n){
+    if(n<1)
+        return;
+    array2(n-1);
+    printf("%d ", n);
+
+
+}
+
